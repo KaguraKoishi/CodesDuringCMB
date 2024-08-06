@@ -1,3 +1,7 @@
+# pyspark版，大概是用于演示。。嗯，在公司机房访问大数据仓库时演示用的（）
+# 几乎没有参考价值
+# 取数的逻辑也没有，import也没有，应该是有代码遗失了
+
 def daily_return(nav):
     window = Window.partitionBy('code').orderBy('date')
     return nav.withColumn(
